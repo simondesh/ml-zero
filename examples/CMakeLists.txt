@@ -1,0 +1,3 @@
+add_executable(vector_example basic_usage/vector_example.cpp)
+target_link_libraries(vector_example mlzero)
+target_include_directories(vector_example PRIVATE ${PROJECT_SOURCE_DIR}/include)
