@@ -353,8 +353,10 @@ Vector Vector::slice(size_t start, size_t end) const {
         throw std::out_of_range("Invalid slice range");
     }
     Vector result(end - start);
-    for (size_t i = start; i < end; ++i) {
-        result.data_[i - start] = data_[i];
+    if (result.data_ != nullptr){
+        for (size_t i = start; i < end; ++i) {
+            result.data_[i - start] = data_[i];
+        }
     }
     return result;
 }

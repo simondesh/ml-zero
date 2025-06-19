@@ -2,7 +2,7 @@
 set(TEST_SOURCES
     test_main.cpp
     unit_tests/test_vector.cpp
-    # unit_tests/test_matrix.cpp
+    unit_tests/test_matrix.cpp
     # unit_tests/test_statistics.cpp
     # Add more test files as you create them
 )
@@ -35,7 +35,7 @@ add_test(NAME all_tests COMMAND mlzero_tests)
 
 # Specific test categories
 add_test(NAME vector_tests COMMAND mlzero_tests "[vector]")
-# add_test(NAME matrix_tests COMMAND mlzero_tests "[matrix]")
+add_test(NAME matrix_tests COMMAND mlzero_tests "[matrix]")
 # add_test(NAME statistics_tests COMMAND mlzero_tests "[statistics]")
 
 # # Performance benchmarks (separate executable)

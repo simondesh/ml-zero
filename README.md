@@ -6,7 +6,15 @@ It is also a way to learn c++.
 This code is not meant for production and is a learning exercise. 
 
 ## features
-- [x] Vector class
+* Vector class
+    * Basic operations addition, subtraction, multiplication, and division
+    * Dot product & cross product
+    * magnitude and normalization
+    * comparison operators
+
+* Matrix class
+
+
 
 ## Todos
 - [ ] Matrix class

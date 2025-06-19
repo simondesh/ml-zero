@@ -2,7 +2,10 @@
 
 #ifndef MLZERO_HPP
 #define MLZERO_HPP
+
+// core mathematical 
 #include "mlzero/core/vector.hpp"
+#include "mlzero/core/matrix.hpp"
 
 #define MLZERO_VERSION_MAJOR 1
 #define MLZERO_VERSION_MINOR 0
@@ -14,6 +17,7 @@ namespace mlzero {
     };
 
     using Vector = core::Vector;
+    using Matrix = core::Matrix;
 
 }
 #endif // MLZERO_HPP
